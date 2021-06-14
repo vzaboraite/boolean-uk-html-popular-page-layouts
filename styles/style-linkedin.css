@@ -3,3 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.main-container {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template:
+    "header header header" 50px
+    "left-bar main right-bar" 1fr /
+    200px 1fr 300px;
+}
+
+.header {
+  grid-area: header;
+  background-color: lightblue;
+}
+
+.left-bar {
+  grid-area: left-bar;
+  background-color: rgb(191, 215, 223);
+}
+
+.main {
+  grid-area: main;
+  background-color: rgb(140, 165, 173);
+}
+
+.right-bar {
+  grid-area: right-bar;
+  background-color: rgb(111, 145, 156);
+}
