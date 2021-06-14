@@ -3,3 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.main-container {
+  min-height: 100vh;
+
+  text-align: center;
+
+  display: grid;
+  grid-template:
+    "header header header header" 50px
+    "left-menu main settings options" 1fr /
+    200px 1fr 200px 40px;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(223, 223, 41);
+}
+
+.left-menu {
+  grid-area: left-menu;
+  background-color: rgb(102, 102, 27);
+}
+
+.main {
+  grid-area: main;
+  background-color: rgb(187, 187, 124);
+}
+
+.settings {
+  grid-area: settings;
+  background-color: rgb(131, 131, 105);
+}
+
+.options {
+  grid-area: options;
+  background-color: rgb(218, 218, 206);
+
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: start;
+}
